@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <h1 class="header">ROCK PAPER SCISSORS</h1>
+    <h3 class="rule">There are 5 rounds, first to five wins</h3>
+
+    <div class="container">
+        <div class="human-container">
+            <p class="top-text">MORTAL</p>
+            <div class="human">
+                <div class="top-what">
+                    <i class="mdi mdi-account icon"></i>
+                    <p class="score">Score: <span id="human-score"></span></p>
+                </div>
+                <div class="icons">
+                    <button class="rock hover-cont btn" id="rock">
+                        <i class="mdi mdi-hand-front-right icon"></i>
+                        <p class="in-text">Rock</p>
+                    </button>
+                    <button class="scissors hover-cont btn" id="scissors">
+                        <i class="mdi mdi-content-cut icon"></i>
+                        <p class="in-text">Scissors</p>
+                    </button>
+                    <button class="paper hover-cont btn" id="paper">
+                        <i class="mdi mdi-hand-front-left-outline icon"></i>
+                        <p class="in-text">Paper</p>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="computer-container">
+            <p class="top-text">ALIEN</p>
+            <div class="computer">
+                <div class="top-what">
+                    <i class="mdi mdi-laptop icon"></i>
+                    <p class="score">Score: <span id="computer-score"></span></p>
+                </div>
+                <div class="icons">
+                    <button class="rock hover-cont btn" id="">
+                        <i class="mdi mdi-hand-front-right icon"></i>
+                        <p class="in-text">Rock</p>
+                    </button>
+                    <button class="scissors hover-cont btn" id="">
+                        <i class="mdi mdi-content-cut icon"></i>
+                        <p class="in-text">Scissors</p>
+                    </button>
+                    <button class="paper hover-cont btn" id="">
+                        <i class="mdi mdi-hand-front-left-outline icon"></i>
+                        <p class="in-text">Paper</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="try-button">Try again</button>
+    <p class="display-text"></p>
+    <div class="text-area" style="color:white"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

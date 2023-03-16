@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141010;
+}
+
+.header {
+    color: #f70776;
+    text-align: center;
+    margin-top: 7%;
+    font-family: 'Press Start 2P', cursive;
+    ;
+}
+
+.rule {
+    color: #f70776;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: 100;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 20%;
+}
+
+.container p {
+    color: #f70776;
+}
+
+.container .human,
+.container .computer {
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.top-what {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-what .icon {
+    font-size: 50px;
+}
+
+.top-what .score {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.top-text {
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 4%;
+}
+
+.human-container .human,
+.computer-container .computer {
+    width: 200%;
+    padding: 8%;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons .icon {
+    font-size: 60px;
+}
+
+.icons .hover-cont {
+    background-color: #c3195d;
+    border-radius: 8px;
+    padding: 4%;
+    text-align: center;
+    width: 30%;
+    border: none;
+}
+
+.icons .hover-cont:hover {
+    box-shadow: 10px 10px 20px rgba(195, 25, 93, 0.3);
+    transform: scale(0.9);
+    transition: all 200ms ease;
+    cursor: pointer;
+
+}
+
+.hover-cont .in-text {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.display-text {
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text-area {
+    text-align: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #c3195d;
+    border: 1px solid white;
+    color: white;
+    width: 20%;
+    padding: 20px 20px;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 2%;
+}
+
+button:hover {
+    box-shadow: 10px 10px 20px rgba(195, 25, 93, 0.1);
+    transform: scale(1.2);
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 57%;
+    }
+
+    .container .human-container {
+        margin-bottom: 47%;
+    }
+}
